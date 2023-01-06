@@ -1,0 +1,67 @@
+@charset "UTF-8";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#page {
+  max-width: 750px;
+  margin: auto;
+  border: 1px solid black;
+}
+
+header {
+  background-color: black;
+  text-align: center;
+  height: 250px;
+}
+
+header h1 {
+  color: white;
+  padding: 80px 0 5px;
+}
+
+header p {
+  color: white;
+}
+
+header p a {
+  color: white;
+  text-decoration: none;
+}
+
+header p a:hover {
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.verso1 p, .verso3 p {
+  padding: 80px 10px;
+  line-height: 2em;
+  font-size: 1.5em;
+}
+
+.verso2 {
+  height: 500px;
+  background-image: url("/desafios/df12/imagens/background001.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center right;
+  position: relative;
+}
+
+.verso2 p {
+  margin: 0;
+  padding: 20px;
+
+  line-height: 2em;
+  font-size: 1.5em;
+  background: rgba(31, 31, 31, 0.548);
+
+  color: white;
+
+  position: absolute;
+  top: 10%;
+  left: 0;
+}
