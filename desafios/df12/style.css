@@ -1,5 +1,7 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&family=Sriracha&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -8,22 +10,25 @@
 html, body {
   min-height: 100vh;
   background-color: darkgrey;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 header {
   background-color: black;
   text-align: center;
-  height: 250px;
 }
 
 header h1 {
   color: white;
   padding: 80px 0 5px;
   font-variant: small-caps;
+  font-family: 'Passion One', cursive;
+  font-size: 4em;
 }
 
 header p {
   color: white;
+  padding-bottom: 80px;
 }
 
 header p a, footer p a {
@@ -39,38 +44,56 @@ header p a:hover, footer p a:hover {
 section {
   padding-top: 10vh;
   padding-bottom: 10vh;
-  padding-left: 30px;
+  font-family: 'Sriracha', cursive
+}
+
+section p {
+  padding-bottom: 2em;
 }
 
 .verso-normal {
   line-height: 2em;
   font-size: 1.5em;
   background-color: white;
+  padding: 30px;
 }
 
 .verso-img {
-  height: 500px;
   background-image: url("/desafios/df12/imagens/background001.jpg");
   background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center right;
-  position: relative;
+  background-position: right center;
+  background-attachment: fixed;
+
+  box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.651);
 }
 
-.verso-img p {
+.verso-img2 {
+  background-image: url("/desafios/df12/imagens/background002.jpg");
+  background-size: cover;
+  background-position: center right;
+  background-attachment: fixed;
+
+  box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.651);
+}
+
+.verso-img p, .verso-img2 p {
 
   line-height: 2em;
   font-size: 1.5em;
+  text-shadow: 1px 1px 1px black;
   
   background: rgba(31, 31, 31, 0.548);
   
-  width: 300px;
+  display: inline-block; /*pra se adaptar a largura do conteúdo*/
+
+  padding: 20px;
 
   color: white;
+}
 
-  padding-left: 30px;
-
-  position: absolute;
-  top: 10%;
-  left: 0;
+footer {
+  background-color: black;
+  text-align: center;
+  color: white;
+  padding: 10px;
 }
